@@ -187,3 +187,22 @@ html{
         margin-bottom: 20px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cabezal header {
+        padding: 10px 20px;
+    }
+
+    .cabezal header .logo a {
+        font-size: 35px;
+    }
+
+    .inicio .contenido {
+        max-width: 80%;
+    }
+
+    .sobremi .fila .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
