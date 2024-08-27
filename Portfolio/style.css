@@ -151,3 +151,39 @@ html{
     padding: 5px;
     border-radius: 5px;
 }
+
+@media (max-width: 767px) {
+    .cabezal header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .cabezal nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabezal header .logo a {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .nav-responsive {
+        display: block; /* Mostrar el botón de navegación responsive */
+    }
+
+    .inicio .contenido {
+        max-width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .sobremi .fila {
+        flex-direction: column;
+    }
+
+    .sobremi .fila .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
