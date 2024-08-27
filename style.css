@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*menu*/
+.cabezal{
+    background:rgb(88, 163, 161);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.cabezal header{
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 15px 20px;
+    display: flex;
+}
+.cabezal header .logo a{
+    font-family: "Righteous";
+    font-size: 38px;
+    color:floralwhite;
+    text-decoration: none;
+}
+.cabezal header ul{
+    display: flex;
+    list-style-type: none;
+}
+.cabezal nav ul li a {
+    text-align: none;
+    color:floralwhite;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .7s;
+    text-decoration: none;
+}
+.cabezal header nav ul li a :hover{
+    color: #aae0d5;
+}
+.nav-responsive{
+    background-color: #1cb698;
+    color: floralwhite;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display:none;
+}
+
+/*inicio*/
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),url(img/images.png);
+    background-size: cover;
+    height: 100vh;
+    color:floralwhite;
+    display:flex;
+    align-items: center;
+}
+.inicio .contenido{
+    padding: 20px;
+    background-color: rgb(35, 45, 45);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido h1{
+    margin-top: 35px;
+    font-size: 40px;
+    font-family: 'Otomanopee One', sans-serif;                             
+}
+.inicio .contenido h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido .redes a{
+    color:#1cb698;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #1cb698;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 35px 5px;
+    font-size: 20px;
+    transition: .5;
+}
+.inicio .contenido .redes a :hover{
+    background-color: floralwhite;
+}
+/*personal*/
+.sobremi{
+    background-color: black;
+    color:floralwhite;
+    padding: 20px 20px;
+}
+.sobremi .contenido-personal{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-family: "Righteous";
+    text-align: center;
+    font-size: 45px;
+    padding: 20px 0;
+}
+.sobremi .contenido-personal p{
+    margin-bottom: 20px;
+    line-height: 22px;
+    font: 15px;
+}
+.sobremi .contenido-personal p span{
+    color: floralwhite;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .columna{
+    width: 50%;
+}
+.sobremi .fila .columna h3{
+    font-family: 'Palatino, URW Palladio L', serif;
+    color:#5b867d;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.sobremi .fila .columna ul{
+    list-style: none;
+}
+.sobremi .fila .columna ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .columna ul li strong{
+    color: #1cb698;
+    width: 120px;
+    display: inline-block;
+}
+.sobremi .fila .columna ul li span{
+    font-weight: bold;
+    background-color: #1cb698;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .cabezal header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .cabezal nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabezal header .logo a {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .nav-responsive {
+        display: block; /* Mostrar el botón de navegación responsive */
+    }
+
+    .inicio .contenido {
+        max-width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .sobremi .fila {
+        flex-direction: column;
+    }
+
+    .sobremi .fila .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
